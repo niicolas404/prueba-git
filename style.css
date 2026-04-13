@@ -127,11 +127,15 @@ section h2::after {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-left: 4px solid #8b3b3b;
+    align-self: flex-start;
+    position: relative;
+    z-index: 1;
 }
 
 .lista-items li:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 32px rgba(201, 84, 76, 0.25);
+    z-index: 10;
 }
 
 .lista-items li img {
@@ -235,6 +239,7 @@ footer img {
 .review-toggle {
     margin-top: 1rem;
     width: 100%;
+    display: block;
 }
 
 .review-toggle summary {
@@ -264,4 +269,16 @@ footer img {
     color: #555;
     line-height: 1.5;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
