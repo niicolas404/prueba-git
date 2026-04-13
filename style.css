@@ -162,3 +162,28 @@ footer img {
         min-width: auto;
     }
 }
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.rating .stars {
+    font-size: 1.5rem;
+    color: #ffc107;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.2rem;
+}
+
+.rating .score {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
